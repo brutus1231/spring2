@@ -16,5 +16,15 @@
         <property name="lastName" value="Kwaśniewski" />
     </bean>
 
+    <bean id="student1" class="pl.sda.Student" >
+        <property name="firstName" value = "#{person1.firstName}" />
+        <property name="lastName" value="#{person1.lastName}" />
+        <property name="indexNumber" value = "120" />
+    </bean>
+
+    <bean id="message1" class="pl.sda.Message"  >
+        <property name="sender" value = "#{'wefewf'}" />
+    </bean>
+
     <context:annotation-config/>
 </beans>

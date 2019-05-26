@@ -8,4 +8,9 @@ import lombok.Setter;
 public class Student extends Person {
 
     private Integer indexNumber;
+
+    @Override
+    public String toString() {
+        return this.getClass().getName() + " " + getFirstName() + " " + getLastName() + " " + getIndexNumber();
+    }
 }
